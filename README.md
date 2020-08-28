@@ -14,6 +14,5 @@ You can looking through the folders individually to find problems or just clone 
 
 ## Acknowledgments
 
-* Friends who helped me understand some problems and worked with me: [Aundre Labrador]() [Prince Rios]() [Edward Cluster]() [Eric Chavez]() and also [TechWithTime]()
-* Inspiration
-* etc
+* Shoutout to [TechWithTim]() for helping me with his explanation videos when I was stuck 
+* Thanks to Saytha Narayapan and Utsab Saha for putting giving me the problems to work on and helping when I was stuck
