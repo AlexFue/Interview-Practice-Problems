@@ -6,7 +6,7 @@ A few interview practice problems that I have worked on over the summer that are
 
 ### Installing
 
-You can looking through the folders individually to find problems or just clone this repository to your terminal if you like.  
+You can look through the folders individually to find problems or just clone this repository to your terminal if you like.  
 
 ## Authors
 
