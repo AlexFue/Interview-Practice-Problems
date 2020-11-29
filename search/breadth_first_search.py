@@ -12,16 +12,16 @@ def bfs(s):
   seen = set() 
   queue = []
 
+  seen.add(s)
   queue.append(s)
 
   while queue:
-    cur = queue.pop()
-    if cur not in seen:
-      seen.add(cur)
-      doWork(cur.val)
+    cur = queue.pop(0)
+    doWork(cur.val)
     for neighbor in cur.neighbors:
       if neighbor not in seen:
         queue.append(neighbor)
+        seen.add(neighbor)
 
 def doWork(n):
   print(n)
