@@ -59,4 +59,6 @@ is empty and returns true because we either found it or we never had one. Then w
 out of bounds or if the first letter of the word is not the same as the current box from the
 board. After we create a copy board to mark up so we know we already used that letter. Next we
 create a function equal to the function recursively but we are checking all sides for the next 
-letter in the word. At the end return the variable 
+letter in the word. At the end return the variable. 
+Also the pointer of the tmp variable is to handle backtracking when we path doesnt lead to the 
+word, we want to put the letter back to where it was instead of the hashtag that replaced it.
