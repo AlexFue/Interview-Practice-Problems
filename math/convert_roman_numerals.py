@@ -102,3 +102,42 @@ while loop to get each char of the roman numeral
   else
     then we are at the last roman numeral and we can add its value to arabic_numeral
   increment i by 2 because you already added the first two roman numerals 
+
+
+
+
+
+
+Solution 2: 
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        d = {'I':1,
+             'V':5,
+             'X':10,
+             'L':50,
+             'C':100,
+             'D':500,
+             'M':1000}
+        
+        previous = 'I' # setting the previous to the smallest numeral because when we first start the loop, since we are at the end, it doesnt have a previous and so we just want to add it 
+        
+        total = 0 # variable to keep track of our total 
+        
+        for cur in s[::-1]: # loop through string, starting from the end
+            if d[cur] < d[previous]: total -= d[cur] # if the current numeral is less than the previous, then you are at the edge case so subtract the current numeral
+            else: total += d[cur] # otherwise, add the current numeral
+            previous = cur # always set the cur to the previous before going to the next number
+        
+        return total
+
+
+
+Process 2:
+The way I solved this problem is with string manipulation
+
+Since the roman numerals go from biggest left to smallest right and the only time that is not the case is when you have IV or IX, etc. 
+We can traverse the string from right to left and check for those cases. 
+You just have to remember the previous numeral and check if the current one is not less than the previous one. 
+If it is, then you are at a edge subtraction case and so you would have to subtract that current number from the total.
+For everything else, just add like normal. 
+
